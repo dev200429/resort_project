@@ -141,6 +141,7 @@ body {
     transform: scale(1.1); /* Slightly enlarge on hover */
 }
 
+/* Main Background Section */
 .bg {
   display: flex;
   flex-direction: column;
@@ -154,20 +155,23 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
+  padding-bottom: 30px;
 }
 
 .bgimg {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures the image covers the entire container without distortion */
+  object-fit: cover;
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1; /* Moves the image behind the text */
-} 
+  z-index: -1; /* Background image behind the content */
+}
+
+/* Slider Frame */
 .slider-frame {
   overflow: hidden;
-  height: 600px;
+  height: 600px; /* Default height for larger screens */
   width: 100vw; /* Full viewport width */
   position: relative;
 }
@@ -183,6 +187,7 @@ body {
   100% { transform: translateX(0); }
 }
 
+/* Slide Container */
 .slide-images {
   display: flex;
   height: 100%;
@@ -190,90 +195,59 @@ body {
 }
 
 .img {
-  flex: 0 0 100%; /* Each image takes up the full width of the container */
+  flex: 0 0 100%; /* Each image occupies the full width of the slider frame */
   height: 100%;
 }
 
 .img img {
-  width: 100%; /* Full width of the container to remove white space */
+  width: 100%; 
   height: 100%;
-  object-fit: cover; /* Ensure the image covers the entire container while maintaining aspect ratio */
-  display: block; /* Remove any white space caused by inline images */
+  object-fit: cover;
+  display: block;
 }
 
-#text-overlay {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  text-align: center;
-  color: #f7f7f7;
-}
+/* Responsive Media Queries */
 
-#typewriter {
-  font-size: 2em;
-  margin: 0;
-  padding: 20px;
-  /* Adjust the font size for mobile responsiveness */
-}
+/* Medium Screen Adjustments */
+@media (max-width: 1024px) {
+  .slider-frame {
+    height: 500px; /* Reduce height for tablets */
+  }
 
-@media (max-width: 768px) {
-  #typewriter {
-      font-size: 1.5em; /* Smaller font size for smaller screens */
+  .slide-images {
+    animation: slide_animation 30s infinite alternate; /* Speed up the animation slightly */
   }
 }
 
-#text-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-    font-family: 'Courier New', monospace;
-}
-
-#typewriter {
-  text-align: center;
-  align-items: center;
-    font-size: 2em; /* Default for larger screens */
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 0.15em solid white;
-    margin: 0 auto;
-    padding-top: 40px;
-    letter-spacing: 0.15em;
-    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
-}
-
-/* Media query for mobile devices */
+/* Small Screen Adjustments */
 @media (max-width: 768px) {
-    #typewriter {
-        font-size: 1.2em; /* Smaller font size for mobile */
-        padding-top: 20px; /* Adjust padding for better mobile display */
-    }
+  .slider-frame {
+    height: 400px; /* Smaller height for phones */
+  }
 
-    #text-overlay {
-        padding: 0 10px; /* Add padding to ensure text doesn't hit the edge of the screen */
-    }
+  .img img {
+    object-fit: contain; /* Prevent cropping on very small screens */
+  }
 }
 
-@keyframes typing {
-    from {
-        width: 0;
-    }
+/* Extra Small Screens (Phones in Portrait Mode) */
+@media (max-width: 480px) {
+  .slider-frame {
+    height: 300px; /* Further reduce height for small screens */
+  }
 
-    to {
-        width: 100%;
-    }
+  .slide-images {
+    animation: slide_animation 24s infinite alternate; /* Make the animation faster */
+  }
+
+  .img img {
+    object-fit: contain; /* Ensure the image fits properly */
+    height: auto; /* Maintain image proportions */
+  }
 }
 
-@keyframes blink-caret {
-    50% {
-        border-color: white;
-    }
-}
+
+
 .section-break1{
   margin-top: 10px;
 }
@@ -301,59 +275,42 @@ body {
   text-align: justify;
   line-height: 1.6; /* Line height for readability */
   font-family: 'Arial', sans-serif; /* Use any preferred font */
+  padding-bottom: 40px;
 }
 
 .center-text p {
   text-align: center;
 }
 
-/* Styling for the "About Morgah Resorts" text */
+/* Adjust the bottom margin for the about section */
+.center-text {
+  margin-bottom: 10px; /* Reduce the bottom margin to minimize whitespace */
+}
+
+/* Additional styling for other elements in the about section */
 .about-title {
-    font-size: 24px;
-    font-weight: bold;
-    position: relative;
-    /* Important for the positioning of the underline */
-    display: inline-block;
-    color: #333;
-    cursor: pointer;
-    margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  color: #333;
+  cursor: pointer;
+  margin-bottom: 15px; /* Reduce margin for less space */
+  gap: 10px;
 }
 
-/* Initial state of the underline (hidden) */
-.about-title::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #333;
-    /* Underline color */
-    transform: scaleX(0);
-    /* Initially hidden (no scale) */
-    transform-origin: left;
-    /* Animation starts from the left */
-    transition: transform 0.3s ease;
-    /* Smooth transition */
-}
-
-/* Hover state of the underline (visible) */
-.about-title:hover::after {
-    transform: scaleX(1);
-    /* Fully visible on hover */
-}
-
-/* Additional styles for other elements in the about section */
-#about h1 {
-    font-size: 50px;
-    margin-bottom: 20px;
+#about h2 {
+  font-size: 30px; /* Adjusted for hierarchy */
+  margin-bottom: 10px; /* Reduce bottom margin */
 }
 
 #about p {
-    font-size: 20px;
-    line-height: 1.6;
-    color: #666;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 10px; /* Reduce margin for less space at the bottom */
 }
+
 /* General container settings */
 .flex-container {
     display: flex;
@@ -423,26 +380,47 @@ body {
  
    #facilities {
     padding-top: 10px;
-    background-color: black;
+    background-color: rgb(255, 243, 243);
     color: white;
     padding-bottom: 30px;
 }
 #fac{
   padding-bottom: 60px;
 }
+.co {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: flex-end;   /* Align at the bottom */
+  width: 100%; 
+  margin-top: auto; /* Push to the bottom of the container */
+  padding-bottom: 20px; /* Add some spacing from the bottom */
+}
 
-#atm:hover, #wifi:hover, #park:hover, #kitchen:hover {
-    animation: change-color 0.5s forwards;
+#third-row {
+  text-align: center; /* Center text and icons */
+}
+
+/* Hover Animation */
+#atm:hover, #wifi:hover, #park:hover, #kitchen:hover, #third-row:hover {
+  animation: change-color 0.5s forwards;
 }
 
 @keyframes change-color {
-    0% {
-        color: white;
-    }
-    100% {
-        color: #f39844;
-    }
+  0% {
+    color: white;
+  }
+  100% {
+    color: #f39844;
+  }
 }
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .co {
+    flex-direction: column; /* Stack icons vertically on smaller screens */
+  }
+}
+
 
 
  
@@ -492,42 +470,60 @@ body {
 }
 #customer {
   display: flex;
-    flex-wrap: wrap;  
-    justify-content: space-around;
-    align-items: stretch;
-    padding-left: 50px;
-    font-size: 19px;
-  }
-  
-  #one, #two, #three, #four, #five {
-    color: #f7f7f7;
-    width: 20%;
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px;
-    height: 280px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  flex-wrap: wrap;
+  justify-content: space-between; /* Distribute space evenly */
+  align-items: stretch;
+  padding: 10px 30px;
+  gap: 10px;  /* Space between boxes */
 }
 
-  
-  #one, #three,#five {
-    background-color:#67887D;
-    color:white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: lighter;
+/* Wider Flexboxes */
+#one, #two, #three, #four, #five {
+  flex: 1 1 48%;  /* Each box takes 48% of the row, adjusts with screen size */
+  max-width: 48%;  /* Prevents boxes from exceeding this width */
+  padding: 20px;
+  height: 300px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  background-color: #67887D;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: lighter;
+}
+
+/* Full width on small screens */
+@media (max-width: 768px) {
+  #one, #two, #three, #four, #five {
+    flex: 1 1 100%;  /* Each box takes 100% of the width */
+    max-width: 100%;  /* Prevent overflow */
+    margin-bottom: 10px;  /* Add small margin between stacked boxes */
   }
-  
-  #two, #four {
-    background-color:#67887D;
-    color: white;
-    font-weight: lighter;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      
-  }
+}
+
+/* Styling for odd-numbered elements */
+#one, #three, #five {
+  background-color: #67887D;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: lighter;
+}
+
+/* Styling for even-numbered elements */
+#two, #four {
+  background-color: #67887D;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: lighter;
+}
+
+
 #link-review{
     font-size: 16px;
     color: black;
@@ -550,106 +546,8 @@ body {
         color:#f39844;
     }
 }
-#nav-menu {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-  }
-  
-  #nav-menu ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  #nav-menu ul li {
-    display: inline-block;
-    margin-right: 20px;
-  }
-  
-  #nav-menu ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  #nav-menu ul li a:hover {
-    color: #ccc;
-  }
-  #footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 20px;
-    background-color: #000000; /* Dark background for the footer */
-    color: white; /* White text for readability */
-  }
-  
-  #footer div {
-    flex: 1;
-    padding: 10px;
-  }
-  
-  #footer #contact h3 {
-    margin-bottom: 10px;
-  }
-  
-  #footer-list a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  #footer-list a:hover {
-    text-decoration: underline;
-  }
-  .maps{
-    padding-right: 0px;
-    padding-left: 850px;
-    
-  }
-  
-  #follow {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    justify-content: center; /* Centers the entire follow section */
-    align-items: center;      /* Vertically aligns text and icons */
-  }
-  
-  .follow-container {
-    display: flex;
-    align-items: center;      /* Aligns text and icons in the middle */
-  }
-  
-  #follow p {
-    margin: 0;
-    font-weight: bold;
-    margin-right: 15px;       /* Space between "FOLLOW US" text and icons */
-  }
-  
-  #follow a {
-    color: white;
-    text-decoration: none;
-    margin-left: 10px;        /* Space between icons */
-  }
-  
-  #follow i {
-    font-size: 24px;          /* Adjust the size of icons */
-  }
-  
-  /* Optional hover effect for the icons */
-  #follow a:hover i {
-    color: #ff6600;           /* Change color on hover */
-  }
-  #tourist {
-    display: flex;
-    justify-content: space-around;
-    align-items: stretch;
-    padding-left: 50px;
-    font-size: 19px;
-  }
-  
-  #isl,#islo,#fsl {
+
+#isl,#islo,#fsl {
     color: #ffffff;
     width: fit-content; /* Set width of each box */
     padding: 20px; /* Add padding to the containers */
@@ -678,12 +576,12 @@ body {
 }
 
 .gallery {
-    display: inline-block;
-    padding: 20px;
+  display: inline-block;
+  padding: 20px;
 }
 
 .gallery-item {
-    display: inline-block;
+  display: inline-block;
     text-align: center; /* Center the subtitle under each image */
     margin-right: 20px; /* Space between gallery items */
 }
@@ -700,7 +598,7 @@ body {
 }
 
 .subtitle {
-    margin-top: 10px; /* Space between the image and subtitle */
+  margin-top: 10px; /* Space between the image and subtitle */
     font-size: 1em; /* Adjust font size as needed */
     color: #555; /* Subtitle color */
 }
@@ -708,15 +606,15 @@ body {
     width: 100%; /* Adjust the container width */
     overflow-x: auto; /* Enable horizontal scrolling */
     white-space: nowrap; /* Prevent line breaks to keep images in one row */
-}
-
-.gallery {
+  }
+  
+  .gallery {
     display: inline-block;
     padding: 20px;
-}
-
-
-
+  }
+  
+  
+  
 #one,#two,#three,#four {
     width: 200px; /* Set image width */
     height: auto; /* Maintain aspect ratio */
@@ -727,7 +625,7 @@ body {
 
 
 #one:hover,#two:hover,#three:hover,#four:hover {
-    transform: scale(1.1); /* Slight zoom-in effect on hover */
+  transform: scale(1.1); /* Slight zoom-in effect on hover */
 }
 .whatsapp-icon {
     position: fixed;
@@ -742,21 +640,168 @@ body {
     border-radius: 50%; /* Optional: round the icon */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Optional: add shadow */
     transition: transform 0.3s; /* Smooth hover effect */
-}
+  }
 
 .whatsapp-icon img:hover {
-    transform: scale(1.1); /* Slight zoom-in effect on hover */
+  transform: scale(1.1); /* Slight zoom-in effect on hover */
 }
+/* Navigation Menu */
+#nav-menu {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+#nav-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#nav-menu ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+#nav-menu ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#nav-menu ul li a:hover {
+  color: #ccc;
+}
+
+/* Footer Styles */
+#footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #000;
+  color: white;
+  flex-wrap: wrap;  /* Wraps content to avoid overflow */
+}
+
+#footer div {
+  flex: 1;
+  padding: 10px;
+  min-width: 250px;  /* Ensures content doesn't shrink too much */
+}
+
+/* Contact Section */
+#footer #contact h3 {
+  margin-bottom: 10px;
+}
+
+/* Footer List Links */
+#footer-list a {
+  color: white;
+  text-decoration: none;
+}
+
+#footer-list a:hover {
+  text-decoration: underline;
+}
+
+/* Maps Section */
+.maps {
+  width: 50%; /* Default map width */
+  padding-left: 0;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Iframe Styles */
+iframe {
+  max-width: 100%;  /* Ensures the iframe scales responsively */
+  height: 250px;
+  border-radius: 10px; /* Optional: Rounded corners for aesthetic */
+}
+
+/* Follow Us Section */
+#follow {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center aligns text and icons */
+  text-align: center;
+}
+
+.follow-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Aligns icons horizontally */
+}
+
+#follow p {
+  margin: 0;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+#follow a {
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+#follow i {
+  font-size: 24px;
+}
+
+#follow a:hover i {
+  color: #ff6600;
+}
+
+/* Tourist Section */
+#tourist {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  padding-left: 50px;
+  font-size: 19px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  #footer {
+      flex-direction: column; /* Stacks footer sections */
+      align-items: center;
+  }
 
   .maps {
-    width: 100%;
-    
-    padding-left: 1200px;
-    margin-top: 20px;
+      width: 100%; /* Full width on smaller screens */
+      padding: 0;
+      margin-top: 10px;
+  }
+
+  iframe {
+      height: 200px; /* Adjust height for smaller screens */
+  }
+
+  .follow-container {
+      flex-direction: column; /* Stack icons vertically */
+      gap: 10px; /* Space between icons */
+  }
+
+  #tourist {
+      flex-direction: column;
+      align-items: center;
+      padding-left: 0;
+  }
 }
 
-iframe {
-    max-width: 100%; /* Ensures the iframe doesn't exceed its container */
-    height: 250px;   /* Adjust height as needed */
+/* Further Adjustments for Phones */
+@media (max-width: 480px) {
+  iframe {
+      height: 180px; /* Reduce height for smaller viewports */
+  }
+
+  #follow i {
+      font-size: 20px; /* Smaller icons for phones */
+  }
 }
+
 

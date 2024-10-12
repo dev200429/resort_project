@@ -390,16 +390,163 @@ h2 {
     padding-left: 10px; /* Reduce padding between image and text */
   }
 }
-.maps {
-  width: 100%;
-  
-  padding-left: 1200px;
-  margin-top: 20px;
+/* Navigation Menu */
+#nav-menu {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
 }
 
+#nav-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#nav-menu ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+#nav-menu ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#nav-menu ul li a:hover {
+  color: #ccc;
+}
+
+/* Footer Styles */
+#footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #000;
+  color: white;
+  flex-wrap: wrap;  /* Wraps content to avoid overflow */
+}
+
+#footer div {
+  flex: 1;
+  padding: 10px;
+  min-width: 250px;  /* Ensures content doesn't shrink too much */
+}
+
+/* Contact Section */
+#footer #contact h3 {
+  margin-bottom: 10px;
+}
+
+/* Footer List Links */
+#footer-list a {
+  color: white;
+  text-decoration: none;
+}
+
+#footer-list a:hover {
+  text-decoration: underline;
+}
+
+/* Maps Section */
+.maps {
+  width: 50%; /* Default map width */
+  padding-left: 0;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Iframe Styles */
 iframe {
-  max-width: 100%; /* Ensures the iframe doesn't exceed its container */
-  height: 250px;   /* Adjust height as needed */
+  max-width: 100%;  /* Ensures the iframe scales responsively */
+  height: 250px;
+  border-radius: 10px; /* Optional: Rounded corners for aesthetic */
+}
+
+/* Follow Us Section */
+#follow {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center aligns text and icons */
+  text-align: center;
+}
+
+.follow-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Aligns icons horizontally */
+}
+
+#follow p {
+  margin: 0;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+#follow a {
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+#follow i {
+  font-size: 24px;
+}
+
+#follow a:hover i {
+  color: #ff6600;
+}
+
+/* Tourist Section */
+#tourist {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  padding-left: 50px;
+  font-size: 19px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  #footer {
+      flex-direction: column; /* Stacks footer sections */
+      align-items: center;
+  }
+
+  .maps {
+      width: 100%; /* Full width on smaller screens */
+      padding: 0;
+      margin-top: 10px;
+  }
+
+  iframe {
+      height: 200px; /* Adjust height for smaller screens */
+  }
+
+  .follow-container {
+      flex-direction: column; /* Stack icons vertically */
+      gap: 10px; /* Space between icons */
+  }
+
+  #tourist {
+      flex-direction: column;
+      align-items: center;
+      padding-left: 0;
+  }
+}
+
+/* Further Adjustments for Phones */
+@media (max-width: 480px) {
+  iframe {
+      height: 180px; /* Reduce height for smaller viewports */
+  }
+
+  #follow i {
+      font-size: 20px; /* Smaller icons for phones */
+  }
 }
 
 
