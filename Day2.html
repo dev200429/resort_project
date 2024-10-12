@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morgah Resort</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/8b12c24e80.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>document.getElementById('mobile-menu-toggle').addEventListener('click', function() {
+    var mobileMenu = document.getElementById('mobile-menu');
+    mobileMenu.classList.toggle('active');
+});
+</script>
+    <script>// Add smooth scrolling to all links
+
+        $("a").on('click', function(event) {
+        
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+        
+            // Prevent default anchor click behavior
+            event.preventDefault();
+        
+            // Store hash
+            var hash = this.hash;
+        
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function() {
+        
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          } // End if
+        });</script>
+</head>
+<body>
+   
+    <nav id="nav-menu" style="background-color: rgb(247, 247, 247); padding-left: 20px; ">
+        <div id="logo">
+            <img src="logo1.jpg" alt="Logo">
+        </div>
+        <ul id="menu-items" style="color: black;">
+            <li><a href="Day2.html" style="color: black;">Home</a></li>
+            <li><a href="#about" style="color: black;">About Us</a></li>
+            <li><a href="rooms.html" style="color: black;">Rooms</a></li>
+            <li><a href="#facilities" style="color: black;">Facilities</a></li>
+        </ul>
+        <button id="bookme">
+            <a style="text-decoration: none; color: white;" target="_blank" href="https://www.booking.com/hotel/pk/7pv-house.en-gb.html?aid=304142&label=gen173rf-1FCBkoggI46AdIM1gDaLUBiAEBmAEJuAEXyAEM2AEB6AEB-AECiAIBogIOMTI3LjAuMC4xOjU1MDCoAgO4Aryn9bcGwAIB0gIkZjU2MDJlNzQtM2ZlZS00ODZhLWE2MTAtNDBjN2Y5ZDRmMGM12AIF4AIB&sid=b58bc9989ff746fc4f53f3f94df63814&dest_id=6031923;dest_type=hotel;dist=0;group_adults=2;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1727878102;srpvid=4e6f63686869087f;type=total;ucfs=1&">
+                Book your Stay
+            </a>
+        </button>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/morgahresort/" target="_blank">
+                <i class="fa-brands fa-facebook fa-sm" style="color: #000000;"></i>
+            </a>
+            <a href="https://www.https://www.instagram.com/morgahresort/" target="_blank">
+                <i class="fa-brands fa-instagram fa-sm " style="color: #000000;"></i>
+            </a>
+        </div>
+    </nav>
+  
+    
+    
+    
+    
+    <div class="bg">
+        <div id="home">
+
+            <div class="slider-frame">
+                <div class="slide-images">
+                    <div class="img">
+                        <img src="IMG-20240921-WA0012.jpg" alt="">
+                    </div>
+                    <div class="img">
+                        <img src="IMG-20240921-WA0014.jpg" alt="">
+                    </div> 
+                    <div class="img">
+                        <img src="Bridal Suite.jpeg" alt="">
+                    </div>
+                    <div class="img">
+                        <img src="Standard Deluxe Room.jpeg" alt="">
+                    </div>
+                    <div class="img">
+
+                        <img src="IMG-20240921-WA0025.jpg" alt="">
+                    </div>
+                    <div class="img">
+                        <img src="IMG-20240921-WA0027.jpg" alt="">
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <!--
+        <div id="text-overlay">
+            <h2 id="typewriter">Your Home <br> &nbsp;&nbsp;&nbsp; Away from Home</h2>
+        </div>
+        -->
+        </div>
+    </div>
+    
+      
+        <hr class="section-break">
+        <div id="about">
+            <!-- Booking.com Search Widget -->
+            <div class="whatsapp-icon">
+                <a href="https://wa.me/+923165662140" target="_blank" title="Chat with us on WhatsApp">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon" />
+                </a>
+            </div>
+            
+           
+            <p class="about-title"> Welcome to Morgah Resorts</p>
+            
+            <h2>Discover Serenity in our gated resort in Rawalpindi. </h2> <br>
+            <div class="center-text">
+                <p>
+                    Nestled in the heart of Rawalpindi, just a short walk away from the scenic Ayub Park, our facilities offer the perfect retreat for those seeking peace and relaxation.
+                    Surrounded by lush greenery stretching as far as the eye can see, our resort provides an idyllic escape from the hustle and bustle of everyday life.
+                    Designed with a nod to colonial architecture, our resort stands out with its timeless charm and elegance. The thoughtfully crafted interiors of our tastefully furnished guest rooms provide a space where you can truly relax and unwind.
+                    In addition to our serene accommodations, we offer spacious, versatile event halls that are ideal for weddings, birthdays, corporate gatherings, and other special occasions. Whether you are hosting a family celebration or a grand event, our dedicated staff will work with you to create an unforgettable experience amidst beautiful surroundings.
+                    Whether you are here for a weekend getaway, a family vacation, or a special event, our resort provides the perfect backdrop to “relax, unwind, and leave the world behind.”
+                </p>
+            </div>
+            
+        </div>
+        <hr class="section-break">
+    <br><br><br><br><br>
+    <div class="flex-container">
+        <!-- First Box with Orange Background and Button -->
+        <div class="flex-box orange-box">
+            <h2 style="padding-top: 15px; ">Explore Our Rooms</h2>
+            <br><br><br>
+            <p style="font-size: 16px;">Explore our range of rooms.</p>
+            <button class="explore-btn"> 
+                <a href="rooms.html">Explore Rooms</a>
+            </button>
+        </div>
+    
+        <!-- Second Box with Background Image -->
+        <div class="flex-box image-box" style="background-image: url('5.jpg');">
+            <h2> Presidential Suite</h2>
+        </div>
+    
+        <!-- Third Box with Background Image -->
+        <div class="flex-box image-box" style="background-image: url('deluxe.JPG');">
+            <h2>Deluxe Terrace Suite</h2>
+        </div>
+    
+        <!-- Fourth Box with Background Image -->
+        <div class="flex-box image-box" style="background-image: url('WhatsApp\ Image\ 2024-09-21\ at\ 13.14.17_26ca49fa.jpg');">
+            <h2>Luxury King Suite</h2>
+        </div>
+    </div>
+   
+        <hr class="section-break1">
+        <div id="facilities" class="text-center bg-black text-white py-5">
+            <br><br>
+            <p style="color: rgb(219, 114, 44);">Facilities</p>
+            <h1>Make Your Stay <br> Memorable</h1>
+            <br><br>
+        
+            <div id="fac" class="container">
+                <div class="row">
+                    <!-- Parking Space -->
+                    <div id="park" class="col-12 col-md-3 mb-4">
+                        <i class="fa-solid fa-square-parking fa-lg" style="color: #fd8725;"></i>
+                        <h3>Parking Space</h3>
+                        
+                    </div>
+        
+                    <!-- Free Wifi -->
+                    <div id="wifi" class="col-12 col-md-3 mb-4">
+                        <i class="fa-solid fa-wifi fa-lg" style="color: #fd8725;"></i>
+                        <h3>Free Wifi</h3>
+                    </div>
+        
+                    <!-- Kitchen Facility -->
+                    <div id="kitchen" class="col-12 col-md-3 mb-4">
+                        <i class="fa-solid fa-utensils fa-lg" style="color: #fd8725;"></i>
+                        <h3>Kitchen</h3>
+                        
+                    </div>
+        
+                    <!-- ATM Facility -->
+                    <div id="atm" class="col-12 col-md-3 mb-4">
+                        <i class="fa-solid fa-credit-card fa-lg" style="color: #fd8725;"></i>
+                        <h3>ATM</h3>
+        
+                    </div>
+                    <hr class="section-break">
+                    
+                    <br><br>
+                    <div id="atm" class="col-12 col-md-3 mb-4">
+                        <i class="fa-solid fa-fan fa-lg" style="color: #fd8725;"></i>
+                        <h3>AC</h3>
+                        
+                      
+                    </div>
+                    <div id="atm" class="col-12 col-md-3 mb-4">
+                        <i class="fa-solid fa-house-chimney-window fa-lg" style="color: #fd8725;"></i>
+                        <h3>Meeting Rooms</h3>
+                        
+                    </div>
+                    <div id="atm" class="col-12 col-md-3 mb-4">
+                        <i class="fa-solid fa-seedling fa-lg" style="color: #fd8725;"></i>
+                        <h3>Outdoor Space for events</h3>
+                        
+                    </div>
+                    <div id="atm" class="col-12 col-md-3 mb-4">
+                        <i class="fa-solid fa-bolt fa-lg" style="color: #fd8725;"></i>
+                        <h3>Express Check-In/Check-Out</h3>
+                        
+                    </div>
+                    <div class="ic">
+
+                        <div id="atm" class="col-12 col-md-3 mb-4" style="align-items: center;">
+                            <i class="fa-solid fa-shirt fa-lg" style="color: #fd8725;"></i>
+                            <h3>Laundry Service</h3>
+                        </div>
+                        <div id="atm" class="col-12 col-md-3 mb-4" style="align-items: center;">
+                            <i class="fa-solid fa-handshake fa-lg" style="color: #fd8725;"></i>
+                            <h3>Conference Rooms</h3>
+                        </div>
+                    </div>
+                    
+                    
+              
+                </div>
+            </div>
+        </div>
+        <hr class="section-break">
+     
+            <br><br><br>
+            <h2 id="tour"style="text-align: center;align-items: center;">Tourist Attractions</h2> <br>
+            <div class="gallery-container">
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <img src="isloo.JPG" alt="Image 2">
+                        <p class="subtitle">Islamabad <br> 20km</p>
+                    </div>
+                 
+                    <div class="gallery-item">
+                        <img src="Airport.JPG" alt="Image 2">
+                        <p class="subtitle">Islamabad Airport <br>20km</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="fsl.jpg" alt="Image 3">
+                        <p class="subtitle">Faisal Masjid <br> 21km</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Mon.jpg" alt="Image 3">
+                        <p class="subtitle">Pakistan Monument <br>18km</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Giga.JPG" alt="Image 3">
+                        <p class="subtitle">Giga Mall <br>14km</p>
+                    </div>
+                  
+                    </div>
+            </div>
+            <br><br>
+            
+        <hr class="section-break">
+        
+        <div id="rev">
+            <br><br>
+            <p id="text">GUEST FEEDBACK</p>
+            <h1>What Customers Say</h1>
+            <br><br>
+            <div id="customer">
+                <div id="one">Place was awesome. Mr. Nasir, the owner, is humble. He checks everything personally and accepts special requests.  Scenery is good,  family-oriented with great staff.</div>
+                <div id="two">Very Excellent Service, staff is so polite, family Environment is good .
+                    Rooms and wash Rooms are very neat and clean.
+                    Window green view.
+                    HIGHLY RECOMMEND</div>
+                <div id="three">Impeccably clean. Spotless bedding, kitchen, and bathroom. Stunning city and green views. Attentive staff, particularly Sohail, ensured a comfortable stay.</div>
+                <div id="four">It was an excellent experience for me and my family. We stayed there for a couple days and everything was perfect. We will be back as soon as possible.Thanks for all</div>
+               
+              </div>
+              
+              <br><br>
+               
+                <a id="link-review" href="https://www.booking.com/hotel/pk/7pv-house.en-gb.html?aid=311984&label=7pv-house-y9D_V7oT_e4WntXwCx3sIAS589036975659%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-1635736907233%3Alp9198978%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YXORK0YJiVoOxcWODxYDaAA&sid=1bea8dcb61f112f13148a8da99f25cc7&dest_id=-2772585;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1726913619;srpvid=b42547e5474c02c4;type=total;ucfs=1&#tab-main"> Click here to see all Reveiws &rarr;</a>
+    
+        </div>
+        <hr class="section-break">
+        <div id="footer" style="color: black; background-color: rgb(247, 247, 247);">
+            <div id="contact">
+                <h3>
+                    CONTACT INFO
+                </h3>
+                <p>7 Park View, Morgah, Rawalpindi <br> Punjab 46600</p>
+                <p> Email: &nbsp;&nbsp; resortmorgah@gmail.com</p> 
+
+                 <p>+92 316 5662140</p>
+                <p>+92 51 5487222</p>
+                <p>+92 51 5487333</p>
+                
+            </div>
+         
+                   <div id="follow">
+                       <div class="follow-container">
+                           <p>FOLLOW US</p>
+                           <a href="https://www.facebook.com/morgahresort/">
+                               <i class="fa-brands fa-facebook fa-xl" style="color: #000000;"></i>
+                            </a>
+                            <a href="https://www.instagram.com/explore/locations/106176124353983/morgah-resort/">
+                                <i class="fa-brands fa-instagram fa-xl" style="color: #000000;"></i>
+                            </a>
+                        </div>
+                        <div class="maps">
+     
+                            <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d331.6079784927618!2d73.0807363!3d33.5630857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df93a47f4e3bb1%3A0x7ef8d36a2d265787!2sMorgah%20Resort!5e0!3m2!1sen!2s!4v1697031215655!5m2!1sen!2s" 
+                            width="600" 
+                            height="450" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                         </iframe>
+                     </div>
+                  </div>
+                  
+            </div>
+    
+        
+    
+</body>
