@@ -147,7 +147,11 @@ body {
 .social-icons a:hover {
   transform: scale(1.1);
 }
-
+@media(max-width:768px){
+  .social-icons{
+    gap:10px;
+  }
+}
 /* WhatsApp Icon */
 .whatsapp-icon {
   position: fixed;
