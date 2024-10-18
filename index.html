@@ -50,22 +50,29 @@
 </head>
 <body>
    
-    <nav id="nav-menu" style="background-color: rgb(247, 247, 247); padding-left: 20px; ">
+    <nav id="nav-menu" style="background-color: rgb(247, 247, 247);  ">
         <div id="logo">
             <img src="images/logo.jpg" alt="Logo">
         </div>
-        <ul id="menu-items" style="color: black;">
+        <ul id="menu-items" style="color: black; ">
             <li><a href="Day2.html" style="color: black;">Home</a></li>
             <li><a href="#about" style="color: black;">About Us</a></li>
             <li><a href="rooms.html" style="color: black;">Rooms</a></li>
-            <li><a href="#facilities" style="color: black;">Facilities</a></li>
+            <li><a href="facilities.html" style="color: black;">Facilities</a></li>
         </ul>
-        <button id="bookme">
-            <a style="text-decoration: none; color: white;" target="_blank" href="https://www.booking.com/hotel/pk/7pv-house.en-gb.html?aid=304142&label=gen173rf-1FCBkoggI46AdIM1gDaLUBiAEBmAEJuAEXyAEM2AEB6AEB-AECiAIBogIOMTI3LjAuMC4xOjU1MDCoAgO4Aryn9bcGwAIB0gIkZjU2MDJlNzQtM2ZlZS00ODZhLWE2MTAtNDBjN2Y5ZDRmMGM12AIF4AIB&sid=b58bc9989ff746fc4f53f3f94df63814&dest_id=6031923;dest_type=hotel;dist=0;group_adults=2;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1727878102;srpvid=4e6f63686869087f;type=total;ucfs=1&">
-                Book your Stay
-            </a>
+        <div id="book-btn">
+
+            <button id="bookme">
+                <a style="text-decoration: none; color: white;" target="_blank" href="https://www.booking.com/hotel/pk/7pv-house.en-gb.html?aid=304142&label=gen173rf-1FCBkoggI46AdIM1gDaLUBiAEBmAEJuAEXyAEM2AEB6AEB-AECiAIBogIOMTI3LjAuMC4xOjU1MDCoAgO4Aryn9bcGwAIB0gIkZjU2MDJlNzQtM2ZlZS00ODZhLWE2MTAtNDBjN2Y5ZDRmMGM12AIF4AIB&sid=b58bc9989ff746fc4f53f3f94df63814&dest_id=6031923;dest_type=hotel;dist=0;group_adults=2;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1727878102;srpvid=4e6f63686869087f;type=total;ucfs=1&">
+                    Book your Stay
+                </a>
+            </div>
         </button>
         <div class="social-icons">
+            <a href="https://www.airbnb.com/rooms/38503113?adults=1&search_mode=regular_search&check_in=2024-10-30&check_out=2024-11-07&source_impression_id=p3_1729165023_P36tlCtXrM3sXlqA&previous_page_section_name=1000&federated_search_id=a9a9cbcd-5f28-479a-a44c-7fb5b8c2a7ed">
+
+                <i class="fa-brands fa-airbnb fa-sm" style="color: #000000;"></i>
+            </a>
             <a href="https://www.facebook.com/morgahresort/" target="_blank">
                 <i class="fa-brands fa-facebook fa-sm" style="color: #000000;"></i>
             </a>
@@ -111,31 +118,37 @@
     </div>
     
       
-        <hr class="section-break">
-        <div id="about">
-            <!-- Booking.com Search Widget -->
-            <div class="whatsapp-icon">
-                <a href="https://wa.me/+923165662140" target="_blank" title="Chat with us on WhatsApp">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon" />
-                </a>
-            </div>
-            
-           
-            <p class="about-title"> Welcome to Morgah Resorts</p>
-            
-            <h2>Discover Serenity in our gated resort in Rawalpindi. </h2> <br>
-            <div class="center-text">
-                <p>
-                    Nestled in the heart of Rawalpindi, just a short walk away from the scenic Ayub Park, our facilities offer the perfect retreat for those seeking peace and relaxation.
-                    Surrounded by lush greenery stretching as far as the eye can see, our resort provides an idyllic escape from the hustle and bustle of everyday life.
-                    Designed with a nod to colonial architecture, our resort stands out with its timeless charm and elegance. The thoughtfully crafted interiors of our tastefully furnished guest rooms provide a space where you can truly relax and unwind.
-                    In addition to our serene accommodations, we offer spacious, versatile event halls that are ideal for weddings, birthdays, corporate gatherings, and other special occasions. Whether you are hosting a family celebration or a grand event, our dedicated staff will work with you to create an unforgettable experience amidst beautiful surroundings.
-                    Whether you are here for a weekend getaway, a family vacation, or a special event, our resort provides the perfect backdrop to “relax, unwind, and leave the world behind.”
-                </p>
-            </div>
-            
-        </div>
-        <hr class="section-break">
+       <!-- Horizontal Rule
+       <hr class="section-break">
+       -->
+
+<!-- About Section -->
+<div id="about">
+    <!-- WhatsApp Icon -->
+    <div class="whatsapp-icon">
+        <a href="https://wa.me/+923165662140" target="_blank" title="Chat with us on WhatsApp">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon" />
+        </a>
+    </div>
+
+    <p class="about-title">Welcome to Morgah Resorts</p>
+    <h2>Discover Serenity in our gated resort in Rawalpindi.</h2>
+
+    <div class="center-text">
+        <p>
+            Nestled in the heart of Rawalpindi, just a short walk from scenic Ayub Park, our facilities offer the perfect retreat for peace and relaxation. 
+            Surrounded by lush greenery, our resort provides an idyllic escape from the bustle of everyday life.
+            Designed with colonial architecture, our resort combines timeless charm with elegance. 
+            From serene accommodations to spacious event halls for weddings and corporate gatherings, Morgah Resorts promises unforgettable experiences amidst beautiful surroundings. 
+            Whether for a weekend getaway or a special event, unwind and leave the world behind with us.
+        </p>
+    </div>
+</div>
+
+<!-- Horizontal Rule 
+<hr class="section-break">
+-->
+
     <br><br><br><br><br>
     <div class="flex-container">
         <!-- First Box with Orange Background and Button -->
@@ -150,17 +163,31 @@
     
         <!-- Second Box with Background Image -->
         <div class="flex-box image-box" style="background-image: url('images/flex1.jpg');">
-            <h2 style="align-items: center;"> Bridal Suite</h2>
+            <h2 style="align-items: center;"> <a href="rooms.html#bridal-suite " style="text-decoration: none;color: white;">
+
+                Bridal Suite
+            </a> 
+        </h2>
         </div>
     
         <!-- Third Box with Background Image -->
         <div class="flex-box image-box" style="background-image: url('images/deluxe.JPG');">
-            <h2>Deluxe Terrace Suite</h2>
+            <h2>
+                <a  style="text-decoration: none;color: white;" href="rooms.html#terrace-suite">
+
+                    Deluxe Terrace Suite
+                </a>
+
+            </h2>
         </div>
     
         <!-- Fourth Box with Background Image -->
         <div class="flex-box image-box" style="background-image: url('images/flex3.jpg');">
-            <h2>Luxury King Suite</h2>
+            <h2> <a href="rooms.html#deluxe" style="text-decoration: none;color: white;">
+
+                Standard Deluxe Room
+            </a>
+        </h2>
         </div>
     </div>
    
@@ -169,75 +196,81 @@
         <p style="color: rgb(219, 114, 44);">Facilities</p>
         <h1>Make Your Stay <br> Memorable</h1>
         <br><br>
+    
+        <!-- Row 1: First 5 Flex Boxes -->
+        <div id="flexbox1">
+            <div class="flex-fac">
+                <i class="fa-solid fa-square-parking fa-lg" style="color: #fd8725;"></i>
+                <h3>Parking Space</h3>
+                <p>Enjoy the added convenience of our resort with ample on-site parking available for all guests.</p>
+            </div>
+    
+            <div class="flex-fac">
+                <i class="fa-solid fa-wifi fa-lg" style="color: #fd8725;"></i>
+                <h3>Free Wifi</h3>
+                <p>Stay connected with fast and reliable internet throughout the property.</p>
+            </div>
+    
+            <div class="flex-fac">
+                <i class="fa-solid fa-utensils fa-lg" style="color: #fd8725;"></i>
+                <h3>Kitchen</h3>
+                <p>Prepare your favorite meals with ease in modern, well-stocked kitchens.</p>
+            </div>
+    
+            <div class="flex-fac">
+                <i class="fa-solid fa-fan fa-lg" style="color: #fd8725;"></i>
+                <h3>Air Condition</h3>
+                <p>Enjoy personalized comfort with reversible air-conditioned rooms.</p>
+            </div>
+    
+            <div class="flex-fac">
+                <i class="fa-solid fa-house-chimney-window fa-lg" style="color: #fd8725;"></i>
+                <h3>Meeting Rooms</h3>
+                <p>Conduct seamless meetings in fully equipped and private rooms.</p>
+            </div>
+        </div>
+    
+        <!-- Row 2: Remaining Flex Boxes -->
+        <div id="flexbox2">
+            <div class="flex-fac">
+                <i class="fa-solid fa-house-chimney-window fa-lg" style="color: #fd8725;"></i>
+                <h3>Living & Dining Rooms</h3>
+                <p>Enjoy cozy interiors ideal for gatherings and memorable meals.</p>
+            </div>
+    
+            <div class="flex-fac">
+                <i class="fa-solid fa-person-walking fa-lg" style="color: #fd8725;"></i>
+                <h3>Walking Tracks</h3>
+                <p>Stay active with scenic paths designed for refreshing walks or light exercise.</p>
+            </div>
         
-        <div id="fac" class="container">
-                <div class="row">
-                    <!-- Parking Space -->
-                    <div id="park" class="col-12 col-md-3 mb-4">
-                        <i class="fa-solid fa-square-parking fa-lg" style="color: #fd8725;"></i>
-                        <h3>Parking Space</h3>
-                        
-                    </div>
-                    
-                    <!-- Free Wifi -->
-                    <div id="wifi" class="col-12 col-md-3 mb-4">
-                        <i class="fa-solid fa-wifi fa-lg" style="color: #fd8725;"></i>
-                        <h3>Free Wifi</h3>
-                    </div>
+            <div class="flex-fac">
+                <i class="fa-solid fa-utensils fa-lg" style="color: #fd8725;"></i>
+                <h3>BBQ Area</h3>
+                <p> Host delightful outdoor feasts with dedicated BBQ and picnic spaces.</p>
+            </div>
+            
+            <div class="flex-fac">
+                
+                <i class="fa-brands fa-pagelines fa-lg" style="color: #fd8725;"></i>
+                <h3>Terrace</h3>
+                <p>  Bask in open-air views from comfortable terraces and private balconies.</p>
+            </div>
+            
+            <div class="flex-fac">
+                <i class="fa-solid fa-tree fa-lg" style="color: #fd8725;"></i>
+                <h3>Garden Space</h3>
+                <p> Unwind amidst greenery with beautifully maintained outdoor landscapes.</p>
+            </div>
+            
+            
+        </div>
+    </div>
+    
+
         
-                    <!-- Kitchen Facility -->
-                    <div id="kitchen" class="col-12 col-md-3 mb-4">
-                        <i class="fa-solid fa-utensils fa-lg" style="color: #fd8725;"></i>
-                        <h3>Kitchen</h3>
-                        
-                    </div>
-        
-                    <!-- ATM Facility -->
-                    <div id="atm" class="col-12 col-md-3 mb-4">
-                        <i class="fa-solid fa-credit-card fa-lg" style="color: #fd8725;"></i>
-                        <h3>ATM</h3>
-                        
-                    </div>
-                    <hr class="section-break">
-                    
-                    <br><br>
-                    <div id="atm" class="col-12 col-md-3 mb-4">
-                        <i class="fa-solid fa-fan fa-lg" style="color: #fd8725;"></i>
-                        <h3>Air Condition</h3>
-                        
-                        
-                    </div>
-                    <div id="atm" class="col-12 col-md-3 mb-4">
-                        <i class="fa-solid fa-house-chimney-window fa-lg" style="color: #fd8725;"></i>
-                        <h3>Meeting Rooms</h3>
-                        
-                    </div>
-                    <div id="atm" class="col-12 col-md-3 mb-4">
-                        <i class="fa-solid fa-seedling fa-lg" style="color: #fd8725;"></i>
-                        <h3>Outdoor Space for events</h3>
-                        
-                    </div>
-                    <div id="atm" class="col-12 col-md-3 mb-4">
-                        <i class="fa-solid fa-bolt fa-lg" style="color: #fd8725;"></i>
-                        <h3>Express Check-In/Check-Out</h3>
-                        
-                    </div>
-                    <div class="co bottom-center">
-                        <div id="third-row" class="col-12 col-md-3 mb-4">
-                          <i class="fa-solid fa-shirt fa-lg" style="color: #fd8725;"></i>
-                          <h3>Laundry Service</h3>
-                        </div>
-                        <div id="third-row" class="col-12 col-md-3 mb-4">
-                          <i class="fa-solid fa-handshake fa-lg" style="color: #fd8725;"></i>
-                          <h3>Conference Rooms</h3>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  </div>
-        
-        <br><br><br>
-        <h2 id="tour"style="text-align: center;align-items: center;">Nearby Landmarks</h2> <br>
+                  <br><br><br>
+        <h2 id="tour"style="text-align: center;align-items: center;">Nearby Landmarks & Tourist Attractions</h2> <br>
             <div class="gallery-container">
                 <div class="gallery">
                     <div class="gallery-item">
@@ -263,17 +296,17 @@
                     </div>
                     <div class="gallery-item">
                         <img src="images/pc.jpg" alt="Image 3">
-                        <p class="subtitle">Pearl Continental Hotel <br>14km</p>
+                        <p class="subtitle">Pearl Continental Hotel <br>4km</p>
                     </div>
                     <div class="gallery-item">
                         <img src="images/golf.jpg" alt="Image 3">
-                        <p class="subtitle">Rawalpindi Golf Course <br>14km</p>
+                        <p class="subtitle">Rawalpindi Golf Course <br>500 yards</p>
                     </div>
                     </div>
             </div>
             <br><br>
             
-        <hr class="section-break">
+       
         
         <div id="rev">
             <br><br>
@@ -293,12 +326,14 @@
               
               <br><br>
                
-                <a id="link-review" href="https://www.booking.com/hotel/pk/7pv-house.en-gb.html?aid=311984&label=7pv-house-y9D_V7oT_e4WntXwCx3sIAS589036975659%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-1635736907233%3Alp9198978%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YXORK0YJiVoOxcWODxYDaAA&sid=1bea8dcb61f112f13148a8da99f25cc7&dest_id=-2772585;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1726913619;srpvid=b42547e5474c02c4;type=total;ucfs=1&#tab-main"> Click here to see all Reveiws &rarr;</a>
+                <a id="link-review" href="https://www.booking.com/hotel/pk/7pv-house.en-gb.html?aid=311984&label=7pv-house-y9D_V7oT_e4WntXwCx3sIAS589036975659%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-1635736907233%3Alp9198978%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YXORK0YJiVoOxcWODxYDaAA&sid=1bea8dcb61f112f13148a8da99f25cc7&dest_id=-2772585;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1726913619;srpvid=b42547e5474c02c4;type=total;ucfs=1&#tab-main" style="padding-bottom: 30px;"> Click here to see all Reveiws &rarr;</a>
     
             </div>
-            <hr class="section-break1">
+            <!--
+                <hr class="section-break1"> 
+            -->
             
-        <div id="footer" style="color: black; background-color: rgb(247, 247, 247);">
+        <div id="footer" style="color: rgb(255, 255, 255); background-color: rgb(0, 0, 0);">
             <div id="contact">
                 <h3>
                     CONTACT INFO
@@ -316,10 +351,10 @@
                        <div class="follow-container">
                            <p>FOLLOW US</p>
                            <a href="https://www.facebook.com/morgahresort/">
-                               <i class="fa-brands fa-facebook fa-xl" style="color: #000000;"></i>
+                               <i class="fa-brands fa-facebook fa-xl" style="color: #ffffff;"></i>
                             </a>
                             <a href="https://www.instagram.com/morgahresort/?igsh=MTY2ODhiZW1tdDVlYw%3D%3D">
-                                <i class="fa-brands fa-instagram fa-xl" style="color: #000000;"></i>
+                                <i class="fa-brands fa-instagram fa-xl" style="color: #ffffff;"></i>
                             </a>
                         </div>
                         <div class="maps">

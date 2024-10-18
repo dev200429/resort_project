@@ -38,7 +38,7 @@
 </head>
 <body>
     
-  <nav id="nav-menu" style="background-color: rgb(247, 247, 247); padding-left: 20px; ">
+  <nav id="nav-menu" style="background-color: rgb(247, 247, 247);  ">
     <div id="logo">
         <img src="images/logo.jpg" alt="Logo">
     </div>
@@ -46,14 +46,21 @@
         <li><a href="index.html" style="color: black;">Home</a></li>
         <li><a href="#about" style="color: black;">About Us</a></li>
         <li><a href="rooms.html" style="color: black;">Rooms</a></li>
-        <li><a href="#facilities" style="color: black;">Facilities</a></li>
+        <li><a href="facilities.html" style="color: black;">Facilities</a></li>
     </ul>
-    <button id="bookme">
-        <a style="text-decoration: none; color: white;" target="_blank" href="https://www.booking.com/hotel/pk/7pv-house.en-gb.html?aid=304142&label=gen173rf-1FCBkoggI46AdIM1gDaLUBiAEBmAEJuAEXyAEM2AEB6AEB-AECiAIBogIOMTI3LjAuMC4xOjU1MDCoAgO4Aryn9bcGwAIB0gIkZjU2MDJlNzQtM2ZlZS00ODZhLWE2MTAtNDBjN2Y5ZDRmMGM12AIF4AIB&sid=b58bc9989ff746fc4f53f3f94df63814&dest_id=6031923;dest_type=hotel;dist=0;group_adults=2;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1727878102;srpvid=4e6f63686869087f;type=total;ucfs=1&">
-            Book your Stay
-        </a>
-    </button>
+    <div id="book-btn">
+
+        <button id="bookme">
+            <a style="text-decoration: none; color: white;" target="_blank" href="https://www.booking.com/hotel/pk/7pv-house.en-gb.html?aid=304142&label=gen173rf-1FCBkoggI46AdIM1gDaLUBiAEBmAEJuAEXyAEM2AEB6AEB-AECiAIBogIOMTI3LjAuMC4xOjU1MDCoAgO4Aryn9bcGwAIB0gIkZjU2MDJlNzQtM2ZlZS00ODZhLWE2MTAtNDBjN2Y5ZDRmMGM12AIF4AIB&sid=b58bc9989ff746fc4f53f3f94df63814&dest_id=6031923;dest_type=hotel;dist=0;group_adults=2;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1727878102;srpvid=4e6f63686869087f;type=total;ucfs=1&">
+                Book your Stay
+            </a>
+        </button>
+    </div>
     <div class="social-icons">
+        <a href="https://www.airbnb.com/rooms/38503113?adults=1&search_mode=regular_search&check_in=2024-10-30&check_out=2024-11-07&source_impression_id=p3_1729165023_P36tlCtXrM3sXlqA&previous_page_section_name=1000&federated_search_id=a9a9cbcd-5f28-479a-a44c-7fb5b8c2a7ed">
+
+            <i class="fa-brands fa-airbnb fa-sm" style="color: #000000;"></i>
+        </a>
         <a href="https://www.facebook.com/morgahresort/" target="_blank">
             <i class="fa-brands fa-facebook fa-sm" style="color: #000000;"></i>
         </a>
@@ -69,7 +76,7 @@
         </a>
     </div>
       <div class="room-header">
-        <h1 id="room" style="text-align: center;align-items: center;">Room & Accomodations</h1>
+        <h1 id="room" style="text-align: center;align-items: center; font-size: 25px;">Room & Accomodations</h1>
         
       </div>
      <!-- Room 1 -->
@@ -78,9 +85,12 @@
       <img src="images/Deluxe Terrace Suite.jpg" alt="Image Description">
   </div>
   <div class="box right-box">
-      <h2>Deluxe Terrace Suite</h2>
-      <p>Deluxe Suite is a spacious well-appointed room with a charming red brick wall, lending a warm and rustic ambiance. Inside, you’ll find a convenient kitchenette, equipped with a refrigerator and a microwave, ideal for light snacks preparations during your stay. One of the standout features is the private terrace, offering breathtaking views of the National Park and Margalla Hills making it a perfect spot to unwind while surrounded by nature.</p>
-  </div>
+    <div id="terrace-suite">
+
+        <h2>Deluxe Terrace Suite</h2>
+        <p>Deluxe Suite is a spacious well-appointed room with a charming red brick wall, lending a warm and rustic ambiance. Inside, you’ll find a convenient kitchenette, equipped with a refrigerator and a microwave, ideal for light snacks preparations during your stay. One of the standout features is the private terrace, offering breathtaking views of the National Park and Margalla Hills making it a perfect spot to unwind while surrounded by nature.</p>
+    </div>
+    </div>
 </div>
 <br><br>
 
@@ -89,9 +99,13 @@
   <div class="box left-box">
       <img src="images/Standard Deluxe Room.jpeg" alt="Image Description">
   </div>
-  <div class="box right-box">
+  <div class="box right-box"><div id="deluxe">
+
       <h2>Standard Deluxe Room</h2>
-      <p>Our Standard Deluxe Room offers spacious comfort, featuring a luxurious king-size bed and a cozy sitting area, perfect for relaxation after a long day.</p>
+      <p>Our Standard Deluxe Room offers spacious comfort, featuring a luxurious king-size bed and a cozy sitting area, perfect for relaxation after a long day. The room's large windows allow natural light to stream in, creating a bright and welcoming atmosphere. You'll also find a smart TV and a work desk, catering to both leisure and business travelers.
+
+        The en-suite bathroom is equipped with a refreshing rain shower and premium toiletries for a touch of indulgence. Thoughtful amenities, including complimentary Wi-Fi, a mini-bar, and an in-room safe, ensure convenience throughout your stay.</p>
+    </div>
   </div>
 </div>
 <br><br>
@@ -102,8 +116,11 @@
       <img src="images/Bridal Suite.jpeg" alt="Image Description">
   </div>
   <div class="box right-box">
-      <h2>Bridal Suite</h2>
-      <p>Bridal Suite features a luxurious king-sized four-poster bed, dressing room complemented by a stylish sitting area. You can step out onto your own private terrace perfect for intimate moments and taking in the views.</p>
+      <div id="bridal-suite">
+
+          <h2>Bridal Suite</h2>
+          <p>Bridal Suite features a luxurious king-sized four-poster bed, dressing room complemented by a stylish sitting area. You can step out onto your own private terrace perfect for intimate moments and taking in the views.</p>
+        </div>
   </div>
 </div>
 <br><br>
@@ -193,7 +210,7 @@
         </div>
     </div>
     
-    <div id="footer" style="color: black; background-color: rgb(247, 247, 247);">
+    <div id="footer" style="color: rgb(255, 255, 255); background-color: rgb(0, 0, 0);">
         <div id="contact">
             <h3>
                 CONTACT INFO
@@ -211,10 +228,10 @@
                    <div class="follow-container">
                        <p>FOLLOW US</p>
                        <a href="https://www.facebook.com/morgahresort/">
-                           <i class="fa-brands fa-facebook fa-xl" style="color: #000000;"></i>
+                           <i class="fa-brands fa-facebook fa-xl" style="color: #ffffff;"></i>
                         </a>
                         <a href="https://www.instagram.com/morgahresort/?igsh=MTY2ODhiZW1tdDVlYw%3D%3D">
-                            <i class="fa-brands fa-instagram fa-xl" style="color: #000000;"></i>
+                            <i class="fa-brands fa-instagram fa-xl" style="color: #ffffff;"></i>
                         </a>
                     </div>
                     <div class="maps">

@@ -36,9 +36,13 @@ body {
   justify-content: center;
 }
 
-#menu-items li {
-  margin-right: 20px;
-}
+  #menu-items li {
+    align-items: center;
+    justify-content: center;
+    padding-left: 30px;
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
 
 #menu-items li a {
   text-decoration: none;
@@ -86,13 +90,13 @@ body {
     align-items: center;
     padding: 10px;
   }
-
+  
   #menu-items {
     flex-direction: column;
     align-items: center;
     width: 100%;
   }
-
+  
   #menu-items li {
     margin-right: 0;
     margin-bottom: 10px;
@@ -103,13 +107,49 @@ body {
     width: auto;
     text-align: center;
   }
-
+  
   .social-icons {
     margin-top: 10px;
   }
+  .social-icons{
+    padding-left: 20px;
+  }
 }  
-  
-  /* Style for the WhatsApp icon container */
+
+#nav-menu {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+#nav-menu ul {
+  list-style: none;
+  margin: 0;
+ 
+}
+@media(max-width:746px){
+
+  #book-btn{
+    
+    padding-left: 10px;
+  }
+}
+
+#nav-menu ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+#nav-menu ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#nav-menu ul li a:hover {
+  color: #ccc;
+}
+/* Style for the WhatsApp icon container */
 .whatsapp-icon {
     position: fixed; /* Fixed position */
     bottom: 20px; /* Distance from the bottom */
@@ -207,7 +247,7 @@ body {
     display: flex;
     justify-content: center;  /* Horizontally centers the content */
     align-items: center;      /* Vertically centers the content */
-              /* Adjust as needed for the height of the div */
+    /* Adjust as needed for the height of the div */
     text-align: center;
   }
   
@@ -316,12 +356,19 @@ body {
     text-align: center; /* Center the subtitle under each image */
     margin-right: 20px; /* Space between gallery items */
 }
+@media(max-width:768px){
 
+  .gallery img {
+    width: 100%; /* Adjust to full width of the container */
+    max-width: 300px; /* Optional: Set max width for better scaling */
+    margin: 5px auto; /* Center images and reduce margin */
+  
+}
 .gallery img {
-    width: 300px; /* Set image width */
-    height: auto; /* Maintain aspect ratio */
-    cursor: pointer;
-    transition: transform 0.3s ease; /* Smooth hover effect */
+  width: 450px; /* Set image width */
+  height: auto; /* Maintain aspect ratio */
+  cursor: pointer;
+  transition: transform 0.3s ease; /* Smooth hover effect */
 }
 
 .gallery img:hover {
@@ -391,32 +438,6 @@ h2 {
   }
 }
 /* Navigation Menu */
-#nav-menu {
-  background-color: #333;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
-}
-
-#nav-menu ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-#nav-menu ul li {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-#nav-menu ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-#nav-menu ul li a:hover {
-  color: #ccc;
-}
 
 /* Footer Styles */
 #footer {
