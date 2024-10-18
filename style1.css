@@ -136,6 +136,11 @@ body {
   align-items: center;
   padding-right: 20px;
 }
+@media(max-width:768px){
+  .social-icons{
+    gap:10px;
+  }
+}
 
 .social-icons a {
   color: #ffffff;
@@ -147,11 +152,7 @@ body {
 .social-icons a:hover {
   transform: scale(1.1);
 }
-@media(max-width:768px){
-  .social-icons{
-    gap:10px;
-  }
-}
+
 /* WhatsApp Icon */
 .whatsapp-icon {
   position: fixed;
