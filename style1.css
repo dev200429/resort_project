@@ -512,7 +512,9 @@ body {
 #flexbox2 {
   flex-wrap: wrap; /* Allow wrapping for the second row */
 }
-
+#facilities{
+  background-color:  #77DD77;
+}
 /* Styling for individual flex boxes */
 .flex-fac {
   background-color: #413c3c;
