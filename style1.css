@@ -430,7 +430,15 @@ body {
       margin-bottom: 8px;
   }
 }
-
+#bookme1{
+  background-color: #f39844;
+  color: white;
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+  margin-right: 20px;
+  margin-bottom: 0; /* Remove any bottom margin */
+}
 
 /* General container settings */
 /* General container settings */
@@ -454,7 +462,7 @@ body {
 .flex-box {
   flex: 1 0 200px; /* Set a smaller base width */
   max-width: 300px; /* Limit the maximum width */
-  height: 500px; /* Adjust height for a more compact look */
+  height: 600px; /* Adjust height for a more compact look */
   border-radius: 10px;
   overflow: hidden;
   position: relative;
@@ -462,6 +470,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+
 
   /* Background Image */
   background-size: cover;
@@ -479,18 +488,20 @@ body {
   height: 100%;
   background: linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0.8), 
-      rgba(0, 0, 0, 0.8)
+      rgba(0, 0, 0, 0.4), 
+      rgba(0, 0, 0, 0.4)
   );
   z-index: 1;
 }
 
 /* Heading Styling */
-.flex-box h1, .flex-box h2 {
+.flex-box h1, .flex-box h2 ,.flex-container h1 {
   position: relative;
   z-index: 2; /* Keep text above overlay */
   color: white;
   font-family:  'Titillium Web', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
 }
 
 /* Responsive adjustments for tablets */
@@ -585,9 +596,7 @@ body {
 #flexbox2 {
   flex-wrap: wrap; /* Allow wrapping for the second row */
 }
-#facilities{
-  background-color:  #77DD77;
-}
+
 /* Styling for individual flex boxes */
 .flex-fac {
   background-color: #413c3c;
@@ -638,9 +647,66 @@ body {
   i {
       font-size: 24px; /* Adjust icon size */
   }
+}.flex-fac3 {
+  width: auto; /* Allow content to dictate width */
+  max-width: 300px; /* Prevent it from becoming too wide */
+  background-color: #413c3c;
+  border-radius: 10px;
+  height: 300px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: space-around; /* Even space distribution */
+  transition: transform 0.2s;
+  text-align: center;
+  margin: 0 auto; /* Center the box horizontally */
 }
 
+.flex-fac3 i {
+  font-size: 24px; /* Adjust icon size */
+  margin-bottom: 5px; /* Reduce space between icon and heading */
+}
 
+.flex-fac3 h3{
+  margin: 0px 0; /* Reduce space around heading */
+  font-size: 24px;
+  color: #fff; /* Ensure good contrast */
+ font-size: 30px;
+  font-weight: bolder;
+}
+
+.flex-fac3 p {
+  margin: 5px 0; /* Minimal spacing */
+  color: #ddd; /* Light text for better readability */
+}
+
+.flex-fac3:hover {
+  transform: scale(1.25); /* Scale on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .flex-fac3 {
+    width: 90%; /* Adjust width for smaller screens */
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .flex-fac3 h3 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .flex-fac3 {
+    padding: 15px; /* Compact padding for small screens */
+  }
+
+  .flex-fac3 i {
+    margin: 5px;
+    font-size: 24px; /* Adjust icon size for smaller screens */
+  }
+}
  
 #tourist-container {
     display: flex;
@@ -901,6 +967,7 @@ body {
 }
 
 /* Footer Styles */
+/* Footer Styles */
 #footer {
   display: flex;
   justify-content: space-between;
@@ -1084,7 +1151,7 @@ iframe {
   .content-container p {
     font-size: 1em; /* Adjust font size for better readability */
   }
-}
+  }
 /*
 #animate1,#animate2,#animate3{
   position: relative;
