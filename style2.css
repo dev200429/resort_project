@@ -6,6 +6,56 @@ body {
   /* Default font */
 
 }
+.luxury-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.line {
+ /* flex-grow: 1;*/
+  width: 600px;
+  height: 1px;
+  background-color: #333;
+}
+
+.text {
+  font-family: 'Arial', sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #666;
+  font-size: 14px;
+}
+@media (max-width: 600px) {
+  .line {
+    width: 70px; /* Shorter lines on smaller screens */
+  }
+  .text {
+    font-size: 12px; /* Slightly smaller text */
+  }
+}
+
+/* Tablets and small desktops (600px - 992px) */
+@media (min-width: 601px) and (max-width: 992px) {
+  .line {
+    width: 80px;
+  }
+  .text {
+    font-size: 13px;
+  }
+}
+
+/* Large desktops (> 992px width) */
+@media (min-width: 993px) {
+  .line {
+    width: 150px; /* Wider lines on large screens */
+  }
+  .text {
+    font-size: 16px; /* Larger text on bigger screens */
+  }
+}
 #animate{
   position: relative;
 }
@@ -369,8 +419,18 @@ color: #333;
 
 .gallery-container {
   width: 100%; /* Adjust the container width */
-  overflow-x: auto; /* Enable horizontal scrolling */
+  
   white-space: nowrap; /* Prevent line breaks to keep images in one row */
+}
+.gallery-container {
+  overflow-x: auto;      /* Allow horizontal scrolling */
+  overflow-y: hidden;    /* Prevent vertical scrollbar */
+  -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+  scrollbar-width: none;     /* For Firefox */
+}
+
+.gallery-container::-webkit-scrollbar {
+  display: none;         /* Hide scrollbar for Chrome, Safari, and Opera */
 }
 
 .gallery {
@@ -626,4 +686,35 @@ iframe {
       font-size: 20px; /* Smaller icons for phones */
   }
 }
+#flex-footer{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+#footerimg{
+  padding-top: 150px;
+  width:150px;
+  height:100px;
+  right: 0%;
+  padding-left: 50px;
+  padding-top: 60px;
+  padding-right: 0px;
 
+}
+#footerimg img{
+  width:150px;
+  height:150px;
+  border-radius: 10px;
+}
+@media (max-width: 768px) {
+  
+    #flex-footer{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;}
+ #contact{
+  align-items: center;
+  justify-content: center;
+  padding-left: 50px;
+ } 
+}
